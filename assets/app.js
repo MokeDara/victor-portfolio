@@ -126,12 +126,12 @@
       <div class="folder-tab">✦ Project ${String(i + 1).padStart(2, "0")}</div>
       <div class="folder-body">
         <div class="folder-copy">
-          <div class="meta"><span class="dot"></span>${esc(p.date)}</div>
+          ${p.date ? `<div class="meta"><span class="dot"></span>${esc(p.date)}</div>` : ""}
           <h3>${esc(p.title)}</h3>
           <div class="cat">${esc(p.category)}</div>
           <p>${esc(p.summary)}</p>
           ${p.points && p.points.length ? `<ul>${each(p.points, (x) => `<li>${esc(x)}</li>`)}</ul>` : ""}
-          ${p.link ? `<a class="link-arrow" href="${esc(p.link)}" target="_blank" rel="noopener">View project ↗</a>` : ""}
+          ${p.link ? `<a class="link-arrow" href="${esc(p.link)}" target="_blank" rel="noopener">${/github\.com/.test(p.link) ? "View on GitHub ↗" : "View live ↗"}</a>` : ""}
           <div class="tags">${each(p.tags, (t) => `<span class="tag">${esc(t)}</span>`)}</div>
         </div>
         <div class="shot taped">${img(p.image, p.title, p.title, ...(folderColors[p.color] || []))}</div>
@@ -147,12 +147,14 @@
   if (page === "index") {
     const n = C.heroNotes || [];
     const noteColors = ["c-mint", "c-sand", "c-yellow hand-note", "c-mint hand-note"];
+    // where each sticker sits: 0 top-left, 1 top-right, 2 bottom-left, 3 bottom-right
+    const slots = n.length === 3 ? [1, 2, 3] : [0, 1, 2, 3];
     html += `
     <section class="hero">
       <div class="wrap" style="position:relative">
         <div class="hero-kicker">my name is</div>
         <div class="hero-stage">
-          ${each(n.slice(0, 4), (t, i) => `<span class="note ${noteColors[i]} hn-${i}">${esc(t)}</span>`)}
+          ${each(n.slice(0, 4), (t, i) => { const s = slots[i]; return `<span class="note ${noteColors[s]} hn-${s}">${esc(t)}</span>`; })}
           ${arrowSvg("hero-arrow ha-l")}${arrowSvg("hero-arrow ha-r")}
           <div class="name-box"><div class="display">${esc(C.shortName)}</div></div>
         </div>
@@ -162,6 +164,10 @@
         <div class="hero-actions">
           <a class="btn" href="#contact"><span class="sq">↗</span>Contact me</a>
           <button class="btn-code" type="button" data-term=""><span class="prompt">&gt;</span> about<span class="caret"></span></button>
+          <span class="hero-icons">
+          ${C.links.github ? `<a class="hero-icon" href="${esc(C.links.github)}" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub">${icons.github}</a>` : ""}
+          ${C.links.linkedin ? `<a class="hero-icon" href="${esc(C.links.linkedin)}" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">${icons.linkedin}</a>` : ""}
+          </span>
         </div>
         <p class="term-hint">click the code button and type <b>about</b> ✦ or press Ctrl+K</p>
       </div>
@@ -323,7 +329,7 @@
         <div class="p-grid">
           ${each(C.projects, (p, i) => `
           <a class="p-card" href="./#p${i}">
-            <div class="p-card-head"><span class="tabbed"><span class="dot" style="background:#15130d"></span>${esc(p.date)}</span></div>
+            <div class="p-card-head"><span class="tabbed"><span class="dot" style="background:#15130d"></span>${esc(p.date || "Project " + String(i + 1).padStart(2, "0"))}</span></div>
             <div class="frame"><div class="shot">${img(p.image, p.title, p.title, ...(cols[p.color] || []))}</div></div>
             <h3>${esc(p.title)}</h3>
             <p>${esc(p.summary)}</p>

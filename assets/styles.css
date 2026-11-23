@@ -202,7 +202,7 @@ section { padding: 72px 0; position: relative; }
 .hero-stage .note { position: absolute; }
 .hn-0 { top: -6px; left: -110px; transform: rotate(-8deg); }
 .hn-1 { top: -4px; right: -120px; transform: rotate(7deg); }
-.hn-2 { bottom: 26px; left: -150px; transform: rotate(-4deg); }
+.hn-2 { bottom: 26px; left: -190px; transform: rotate(-4deg); }
 .hn-3 { bottom: 30px; right: -175px; transform: rotate(5deg); }
 .hero-arrow { position: absolute; width: 46px; height: 30px; }
 .ha-l { bottom: 50px; left: -40px; } .ha-r { bottom: 54px; right: -28px; transform: scaleX(-1); }
@@ -555,6 +555,14 @@ body {
 .btn-code:hover { background: #7ef0b0; color: var(--ink); }
 .btn-code:hover .caret { background: var(--ink); }
 .btn-code:focus-visible, .term-fab:focus-visible { outline: 2px solid var(--yellow); outline-offset: 3px; }
+.hero-icons { display: inline-flex; gap: 10px; }
+.hero-icon {
+  width: 46px; height: 46px; display: inline-grid; place-items: center; color: var(--fg);
+  border: 1.5px solid rgba(255, 255, 255, .35); background: rgba(255, 255, 255, .04); text-decoration: none;
+}
+.hero-icon svg { width: 19px; height: 19px; }
+.hero-icon:hover { background: var(--fg); color: var(--ink); border-color: var(--fg); }
+.hero-icon:focus-visible { outline: 2px solid var(--yellow); outline-offset: 3px; }
 .term-hint { margin: 14px 0 0; font: 400 16px var(--f-hand); color: var(--fg-muted); }
 .term-hint b { color: #7ef0b0; font-family: var(--f-mono); font-size: 13px; }
 @keyframes blink { 50% { opacity: 0; } }

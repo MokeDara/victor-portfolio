@@ -18,7 +18,7 @@ window.CONTENT = {
   fullName: "Victor Daramola Moke",
   shortName: "VICTOR",              // big pixel name on the home page
   initials: "VM",
-  role: "IT Consultant & Project Coordinator",
+  role: "IT Consultant, Software Developer & IT Auditor",
   status: "Open to new roles and good problems",
   headline: "I turn business needs into projects that ship.",
   photo: "assets/img/victor-casual.jpg",   // main photo (polaroids)
@@ -28,41 +28,41 @@ window.CONTENT = {
   phone: "+351 917 387114",
   cvFile: "assets/Victor-Daramola-Moke-CV.pdf", // replace this PDF to update your CV download
   links: {
-    linkedin: "",                    // e.g. "https://www.linkedin.com/in/your-name"
+    linkedin: "https://www.linkedin.com/in/victor-d-49547724b",
     github: "https://github.com/MokeDara"
   },
 
-  // Sticky notes around your name on the home page
-  heroNotes: ["Ships on time", "Talks to people", "IT Consultant", "Project Coordinator"],
+  // Sticky notes around your name on the home page (3 or 4 of them)
+  heroNotes: ["IT Consulting", "Software Developer", "IT Audit & Governance", "Project Management"],
 
   // ---------- SHORT INTRO (home + about) ----------
   intro:
-    "I'm an IT project coordinator who gets a little too excited about turning messy business needs into clear plans and working systems. ✨ I keep teams aligned, deadlines real, and clients happy.",
+    "I'm an IT consultant, developer and IT auditor who gets a little too excited about turning messy business needs into reliable, well-controlled systems. ✨ I keep teams aligned, deadlines real, and clients happy.",
 
   // Colourful skill chips (colors: yellow, green, pink, blue)
   chips: [
-    { label: "Project Coordination", color: "yellow", emoji: "🗂️" },
-    { label: "IT Consulting", color: "green", emoji: "💡" },
+    { label: "IT Consulting", color: "yellow", emoji: "💡" },
+    { label: "IT Audit & Compliance", color: "green", emoji: "🔍" },
     { label: "Agile & Jira", color: "pink", emoji: "🧩" },
     { label: "Python & SQL", color: "blue", emoji: "💻" }
   ],
 
   // ---------- ABOUT PAGE ----------
   bio: [
-    "Over the last 4 years I've worked where business and technology meet: coordinating IT and branding projects for clients, building web applications and APIs, and running live VAR systems for professional football broadcasts.",
-    "My favourite part of any project is the start, sitting with the people who will use the thing, understanding what they actually need, and turning that into a plan the whole team believes in. Then I keep it moving, one working increment at a time.",
+    "For 4 years I've worked across IT consulting, software development and IT audit, in IT services, branding, healthcare and education: analysing requirements, designing solutions, automating processes and checking that systems are reliable and compliant.",
+    "My favourite part of any project is the start, sitting with clients, leadership and end users, understanding what they actually need, and turning that into a plan the whole team believes in. Then I keep it moving, one working increment at a time.",
     "I'm currently completing an MSc in Information Systems at Universidade do Minho, where I also work as a Research Fellow in Strategy & Competitiveness."
   ],
   bioNotes: [
-    "Right now I'm finishing Skyloom, an AI clinical decision support system for my MSc, and looking for my next role in IT consulting or project management.",
+    "Right now I'm finishing Skyloom, an AI clinical decision support system for my MSc, and looking for my next role in IT consulting, software development or IT audit.",
     "When I'm not working, I'm organising events as Director of Inclusion at SEA UMinho, or building side projects to learn something new."
   ],
 
   // "How I work" sticky notes (colors: lavender, sand, mint, pink)
   howIWork: [
     { title: "Start with the people", text: "Before any plan or tool, I sit with the users and stakeholders: doctors, directors, clients. A project built on the right questions saves weeks later.", note: "questions before tools.", color: "lavender" },
-    { title: "Ship in small wins", text: "I plan work in short Agile iterations, track it in Jira, and deliver something that works at every step. 5 of my 7 client projects finished ahead of schedule and under budget.", note: "small wins, often.", color: "sand" },
-    { title: "Stay calm when it's live", text: "Across 21+ live football broadcasts, I learned to fix problems under pressure, keep everyone informed, and write down what we learned afterwards.", note: "no second takes.", color: "mint" }
+    { title: "Ship in small wins", text: "I plan work in short Agile iterations, track it in Jira, and deliver something that works at every step. 5 of my client projects finished ahead of schedule and under budget.", note: "small wins, often.", color: "sand" },
+    { title: "Check before go-live", text: "Before each of 21+ live football broadcasts, I audited system configuration and data accuracy. When something broke, I fixed it under pressure and documented the root cause.", note: "trust, but verify.", color: "mint" }
   ],
 
   // ---------- EXPERIENCE (newest first) ----------
@@ -73,58 +73,60 @@ window.CONTENT = {
       location: "Braga, Portugal",
       dates: "Jul 2026 – Sep 2026",
       years: "2026",
-      highlight: "Quality checks on video game content across multiple platforms",
+      highlight: "Pre-release quality and compliance checks across multiple platforms",
       points: [
-        "Tested localized video game content for linguistic, cultural and functional accuracy.",
-        "Audited deliverables against client style guides and acceptance criteria.",
-        "Logged and tracked defects to keep fixes on schedule for release."
+        "Tested localized software builds across multiple platforms, verifying functional, linguistic and cultural accuracy before release.",
+        "Audited deliverables against client standards, style guides and acceptance criteria, documenting non-compliance and recommending corrections.",
+        "Logged, prioritised and tracked defects in issue-tracking systems through to resolution, keeping releases on schedule."
       ],
-      tags: ["QA Testing", "Issue Tracking", "Attention to Detail"]
+      tags: ["QA Testing", "Compliance Checks", "Issue Tracking"]
     },
     {
-      role: "Match Operations & VAR Systems Engineer",
+      role: "Match Operations & VAR Systems Engineer (Freelance)",
       company: "Hawk-Eye Innovations Ltd",
       location: "Multiple stadiums, Portugal",
       dates: "Sep 2025 – Jun 2026",
       years: "2025 – 2026",
       highlight: "21+ live professional matches · 5 team members trained",
       points: [
-        "Coordinated match officials, broadcasters, stadium managers and technical teams to deliver VAR operations to fixed broadcast deadlines.",
-        "Resolved network, audio and video incidents in real time under pressure.",
-        "Trained and onboarded 5 VAR technical team members across different stadiums.",
-        "Wrote post-match incident reports with root causes and recommendations."
+        "Operated and supported mission-critical real-time systems, including network, audio, video and data transmission, across multiple professional football venues.",
+        "Performed pre-match system audits and configuration checks, verifying system integrity, data accuracy and compliance with operational standards before go-live.",
+        "Diagnosed and resolved network, audio and video incidents in real time, documenting root causes and corrective actions in post-incident reports.",
+        "Coordinated with broadcast IT teams, technical staff and match officials across 21+ matches, and trained 5 technical team members on operating procedures."
       ],
-      tags: ["Live Operations", "Incident Management", "Training", "Stakeholders"]
+      tags: ["Live Operations", "System Audits", "Incident Management", "Training"]
     },
     {
-      role: "Software Developer",
+      role: "Junior Developer",
       company: "Mokesinfotech Solution",
       location: "Remote / Hybrid",
       dates: "Nov 2023 – Dec 2025",
       years: "2023 – 2025",
-      highlight: "Client web applications, REST APIs and automated workflows",
+      highlight: "Client applications, REST APIs, CI/CD and automated workflows",
       points: [
-        "Built server-side applications and REST API integrations with Python, SQL and Node.js.",
-        "Managed CI/CD and deployments with Docker, Vercel and AWS, watching reliability and cost.",
-        "Redesigned manual business processes as automated Python and n8n workflows.",
-        "Wrote documentation and guides that cut onboarding time for new team members."
+        "Built and maintained server-side applications and REST API integrations for client projects using Python, SQL and Node.js, with PostgreSQL and MongoDB.",
+        "Managed CI/CD pipelines, containerised deployments and cloud services (AWS, Docker, Vercel), balancing reliability, security and running cost.",
+        "Redesigned manual business processes as automated Python and n8n workflows, reducing manual effort and errors.",
+        "Implemented automated unit testing and quality controls that reduced regressions and protected service levels.",
+        "Produced system documentation, user manuals and installation guides that supported client handover and traceability."
       ],
-      tags: ["Python", "Node.js", "SQL", "AWS", "Docker", "Agile"]
+      tags: ["Python", "SQL", "REST APIs", "AWS", "Docker", "n8n"]
     },
     {
-      role: "Project Coordinator – IT & Brand Delivery",
+      role: "Junior IT Consultant",
       company: "Athwart Global",
       location: "Remote",
       dates: "Nov 2022 – Aug 2023",
       years: "2022 – 2023",
-      highlight: "7+ client projects · 5 delivered ahead of schedule and under budget",
+      highlight: "5 projects delivered ahead of schedule and under budget",
       points: [
-        "Coordinated 7+ major client projects across IT and branding teams, including work for a national development bank and a real-estate company.",
-        "Managed schedules, resources and priorities in Jira, Microsoft Dynamics AX and Excel.",
-        "Introduced Agile practices to plan, delegate and track work across remote teams.",
-        "Translated client and business needs into clear plans for the delivery team."
+        "Advised clients on IT and branding engagements from requirements through solution design, delivering 5 projects ahead of schedule and under budget.",
+        "Assessed client requirements and business processes, managing resources and priorities in Jira, Microsoft Dynamics AX and Excel.",
+        "Translated business strategy and customer pain points into technical roadmaps, advising senior leadership on the right delivery approach.",
+        "Introduced Agile workflows for distributed teams, improving visibility, accountability and delivery speed.",
+        "Conducted operational and IT asset audits, cost analyses and asset verifications, reporting findings to executive management."
       ],
-      tags: ["Project Coordination", "Jira", "Agile", "Client Delivery"]
+      tags: ["IT Consulting", "Requirements", "IT Asset Audits", "Agile", "Jira"]
     }
   ],
 
@@ -135,9 +137,8 @@ window.CONTENT = {
       company: "Cycle Point Branding",
       dates: "",
       points: [
-        "Coordinate daily branding and IT operations.",
-        "Manage product delivery from brief to handover.",
-        "Align business strategy with customer needs."
+        "Co-lead daily branding and IT operations.",
+        "Manage product delivery from brief to handover, in line with client needs."
       ]
     },
     {
@@ -146,7 +147,7 @@ window.CONTENT = {
       dates: "",
       points: [
         "Plan and coordinate association events.",
-        "Support HR in member and resource management.",
+        "Support member and resource management.",
         "Introduced Agile methods to speed up event delivery."
       ]
     }
@@ -199,9 +200,25 @@ window.CONTENT = {
         "Designed to cut recruitment screening time by 95% (TechFlow Solutions case study)."
       ],
       tags: ["Python", "Gemini API", "Outlook", "Pandas", "docxtpl"],
-      link: "",
+      link: "https://github.com/MokeDara/AITAS-Intelligent-Recruitment-System",
       image: "",
       color: "yellow"
+    },
+    {
+      title: "JOBMEET",
+      date: "",
+      category: "AI Career Tool · Personal Project",
+      summary: "AI resume optimizer and ATS matcher: upload a CV, paste a job ad, and see how well they fit.",
+      points: [
+        "Built a Streamlit web app that scores a PDF resume against a job description from 0 to 100, listing missing keywords and skills.",
+        "Offers two analysis modes: Google Gemini for detailed reasoning, or TF-IDF and cosine similarity with no API calls.",
+        "Falls back automatically to TF-IDF matching if the AI service is unavailable.",
+        "Keeps the uploaded resume in the session, so one CV can be checked against several job ads."
+      ],
+      tags: ["Python", "Streamlit", "Gemini API", "scikit-learn", "NLTK"],
+      link: "https://github.com/MokeDara/JOBMEET",
+      image: "",
+      color: "pink"
     }
   ],
 
@@ -225,9 +242,11 @@ window.CONTENT = {
 
   // ---------- SKILLS (grouped) ----------
   skills: [
-    { group: "Project Management", items: ["Agile / Scrum", "Kanban", "Jira", "Risk & Issue Mgmt", "Stakeholder Mgmt", "MS Dynamics AX", "Excel"] },
-    { group: "Development", items: ["Python", "SQL", "JavaScript", "TypeScript", "Node.js", "React", "Next.js", "Django", "Java"] },
-    { group: "Data, Cloud & AI", items: ["PostgreSQL", "MongoDB", "Amazon Neptune", "ChromaDB", "AWS", "Docker", "Vercel", "n8n", "Claude API", "Gemini API", "Pandas"] }
+    { group: "IT Consulting & Audit", items: ["Requirements Analysis", "Solution Design", "Process Improvement", "IT Risk Identification", "System & Asset Audits", "Compliance Checks", "Root-Cause Analysis", "Incident Reporting"] },
+    { group: "Project Management", items: ["Agile / Scrum", "Kanban", "SDLC", "Risk & Issue Mgmt", "Stakeholder Mgmt", "Change Requests", "Jira", "MS Dynamics AX", "Excel"] },
+    { group: "Programming", items: ["Python", "SQL", "Next.js", "REST APIs", "GitHub", "n8n"] },
+    { group: "Data & AI", items: ["PostgreSQL", "MySQL", "MongoDB", "Amazon Neptune", "ChromaDB", "Claude API", "Gemini API", "AI Agents", "scikit-learn", "Streamlit"] },
+    { group: "Cloud & DevOps", items: ["AWS (EC2, DynamoDB, Neptune)", "Docker", "Vercel", "CI/CD"] }
   ],
 
   languages: ["English (Fluent)", "Portuguese (Fluent)"],
@@ -239,11 +258,11 @@ window.CONTENT = {
   // What the "about" command prints. Keep each line short (under 40 characters).
   terminalAbout: [
     "VICTOR DARAMOLA MOKE",
-    "IT Consultant & Project Coordinator",
+    "IT Consultant · Developer · IT Auditor",
     "",
-    "4 years turning business needs",
-    "into projects that ship.",
-    "7+ client projects, 5 ahead of",
+    "4 years in IT consulting, software",
+    "development and IT audit.",
+    "5 projects delivered ahead of",
     "schedule and under budget.",
     "21+ live football broadcasts.",
     "MSc Information Systems, UMinho."

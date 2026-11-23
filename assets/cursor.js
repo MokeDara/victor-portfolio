@@ -34,7 +34,7 @@
     if (show !== shown) { shown = show; layers.forEach((l) => l.classList.toggle("on", show)); }
 
     if (onScreen) {
-      const size = Math.min(Math.max(r.height * 1.15, 120), 300);
+      const size = Math.min(Math.max(r.height * 1.15, 60), 300);
       const travel = Math.max(0, r.width - size) / 2;
       const drift = still ? -0.45 : Math.sin(t / SPEED);    // -1 … 1, left ↔ right
       const x = r.left + r.width / 2 + drift * travel - size / 2;
